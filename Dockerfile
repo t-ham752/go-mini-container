@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt update &&\
     apt upgrade -y &&\
-    apt install make -y
+    apt install make sudo -y
 
 RUN apt install software-properties-common -y &&\
     add-apt-repository ppa:longsleep/golang-backports &&\
